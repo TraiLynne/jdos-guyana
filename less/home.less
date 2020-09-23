@@ -1,0 +1,433 @@
+#home {
+    background-color: @blueBackground;
+    background-image: url(../img/house-wire-model-fade-white-1500x1085.png);
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-size: auto;
+
+    #cta {
+        article {
+            max-width: 1200px;
+            color: @lightFontColor;
+            margin: 0 auto;
+            text-align: center;
+
+            padding: 50px 25px;
+
+            @media @tablet {
+                text-align: left;
+                .flexBox(row, nowrap, space-between, center)
+            }
+
+            p {
+                width: 100%;
+                font-size: 2em;
+                margin-bottom: 25px;
+
+                @media @tablet {
+                    width: 75%;
+                    margin-bottom: 0;
+                }
+            }
+
+            a {
+
+                @media @tablet {
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    main {
+        width: 100%;
+        background-color: white;
+        line-height: 1.5em;
+
+        #services {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 25px 0;
+
+            @media @tablet {
+                .flexBox(column, nowrap, space-around, center)
+            }
+
+            h2 {
+                font-size: 1.5em;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+
+                @media @tablet {
+                    font-size: 2em;
+                }
+            }
+
+            p {
+                color: @mediumFontColor;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+
+            #service-container {
+                width: 90%;
+                margin: 0 auto;
+                .flexBox(column, nowrap, space-between, center);
+
+                @media @tablet {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+
+                .service {
+                    // width: 100%;
+                    width: 300px;
+                    height: 300px;
+                    margin: 5px auto;
+                    // background-color: @blueBackground;
+                    // color: @blueBackground;
+                    color: white;
+                    
+                    text-align: center;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                    .flexBox(column, nowrap, center, center);
+
+                    &:hover {
+                        // background-color: transparent;
+                        color: white;
+                    }
+
+                    @media @tablet {
+                        // width: 30%;
+                        margin: 5px;
+                    }
+
+                    
+
+                    
+
+                    i {
+                        font-size: 5em;
+                        align-self: center;
+                        margin: 20px;
+                        color: gold;
+                    }
+
+                    h5 {
+                        // color: white;
+                        align-self: center;
+                        font-size: 2em;
+                        line-height: 1.5em;
+                        background-color: @blueBackground;
+                        opacity: 50%;
+                        width: 100%;
+
+                        &:hover {
+                            opacity: 100%;
+                        }
+                    }
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+
+                        &:hover {
+                            // color: black;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                #construction {
+                    background-image: url('../img/services/ConstructionManagement.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                #facilities {
+                    background-image: url('../img/services/facilities-maint.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                #progProj {
+                    background-image: url('../img/services/program_project_manage.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                #engineering {
+                    background-image: url('../img/services/JDos-Cape-05-2014--300x200.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                #corporate {
+                    background-image: url('../img/services/corp-services2.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                #contact {
+                    background-image: url('../img/services/contact.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .modal {
+                    text-align: left;
+
+                    .modal-content {
+                        .modal-header {
+                            background-color: @blueBackground;
+                            color: @lightFontColor;
+
+                            button {
+                                color: @lightFontColor;
+                            }
+                        }
+
+                        .modal-body {
+                            article {
+                                h2 {
+                                    line-height: 1.5em;
+                                }
+
+                                p {
+                                    margin: 10px 0;
+                                    text-align: left;
+                                }
+                                
+                                .special {
+                                    line-height: 2em;
+                                }
+                            }
+
+                            article.outset {
+                                border: 1px solid @blueBackground;
+                                background-color: @mediumFontColor;
+                                width: 94%; 
+                                margin: 20px auto;
+                                p{
+                                    color: black;
+
+                                    span {
+                                        font-weight: bold;
+                                        color: gold;
+                                    }
+                                }
+                            }
+                        }
+
+                        .modal-footer {
+                            background-color: @blueBackground;
+
+                            button {
+                                color: white;
+
+                                a {
+                                    color: black;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                    
+
+                // .card {
+                //     width: 100%;
+                //     margin: 20px 0;
+
+                //     &:hover {
+                //         background-color: black;
+                //     }
+
+                //     @media @tablet {
+                //         width: 45%;
+                //         margin: 20px;
+                //     }
+
+                //     .card-img {
+                //         height: 100%;
+
+                //         &:hover {
+                //             display: contents;
+                //           }
+                //     }
+
+                //     .card-img-overlay {
+                //         .flexBox(row, nowrap, space-around, center);
+
+                //         h5 {
+                //             align-self: center;
+                //             font-size: 1.5em;
+                //             font-weight: bold;
+                //         }
+                //     }
+                // }
+            }
+        }
+
+        #projects {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 25px 0;
+
+            h2 {
+                font-size: 1.5em;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+
+                @media @tablet {
+                    font-size: 2em;
+                }
+            }
+
+            p {
+                color: @mediumFontColor;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+
+            .accordion {
+                width: 96%;
+                margin: 0 auto;
+    
+                .card {
+                    width: 100%;
+    
+                    .card-header {
+                        height: 50px;
+                        background-color: #0a2a45; 
+                        color: white;
+                    }
+    
+                    .collapse {
+                        .card-body {
+                            article {
+                                width: 96%;
+                                margin: 0 auto;
+                                padding: 10px 0;
+                                .flexBox(column, nowrap, space-around, center);
+    
+                                @media @tablet {
+                                    .flexBox(row, nowrap, space-between, center)
+                                }
+    
+                                div {
+                                    width: 100%;
+                                    height: auto;
+                                    .flexBox(column, nowrap, center, center);
+    
+                                    @media @tablet {
+                                        width: 45%;
+                                        height: auto;
+                                    }
+                                }
+    
+                                .textBox {
+                                    line-height: 1.5em;
+    
+                                    @media @tablet {
+                                        width: 45%;
+                                    }
+    
+                                    h3 {
+                                        font-size: 1.25em;
+                                        text-transform: uppercase;
+                                        text-align: center;
+                                        padding: 20px;
+    
+                                        @media @tablet {
+                                            font-size: 1.5em;
+                                        }
+                                    }
+    
+                                    p {
+                                        padding: 5px 0;
+                                        text-align: left;
+                                    }
+    
+                                    h4 {
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+    
+                            article.second{
+                                div {
+                                    @media @tablet {
+                                        order: 1;
+                                    }
+                                }
+                                .textBox {
+                                    @media @tablet {
+                                        order: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            button {
+                display: flex;
+                align-self: center;
+                margin: 20px auto;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+
+        #partners {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 0 50px;
+
+            h2 {
+                font-size: 1.5em;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+
+                @media @tablet {
+                    font-size: 2em;
+                }
+            }
+
+            div {
+                .flexBox(column, nowrap, space-around, center);
+
+                @media @tablet {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+
+                img {
+                    width: 100%;
+
+                    @media @tablet {
+                        width: 24%;
+                    }
+                }
+            }
+        }
+    }
+}
